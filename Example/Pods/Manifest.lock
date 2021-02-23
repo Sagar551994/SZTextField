@@ -1,0 +1,16 @@
+PODS:
+  - SZTextField (1.0.0)
+
+DEPENDENCIES:
+  - SZTextField (from `../SZTextField/`)
+
+EXTERNAL SOURCES:
+  SZTextField:
+    :path: "../SZTextField/"
+
+SPEC CHECKSUMS:
+  SZTextField: b19d85f596babab662e56900eb4c12dd5acb0701
+
+PODFILE CHECKSUM: a5062ceb47d89305b68e81b5ef884946bf476c2b
+
+COCOAPODS: 1.10.0

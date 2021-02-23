@@ -1,0 +1,6 @@
+framework module SZTextField {
+  umbrella header "SZTextField-umbrella.h"
+
+  export *
+  module * { export * }
+}
