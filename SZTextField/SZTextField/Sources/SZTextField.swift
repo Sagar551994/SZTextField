@@ -69,7 +69,12 @@ public struct SZTextField: View {
                     
                 }
                 .fixedSize()
-                .offset(x: notifier.isImageShow ? textFieldValue.isEmpty ? 0.0 : -(notifier.imageSize.width) : textFieldValue.isEmpty ? 0.0 : 0.0, y: textFieldValue.isEmpty ? 0.0 : -(notifier.szselectedLineHeight - notifier.sztextFontSize - 2))
+                .offset(x:
+                            notifier.isImageShow ?
+                            notifier.isImageRight ? textFieldValue.isEmpty ? 0.0 : -2.0 : textFieldValue.isEmpty ? 0.0 : -(notifier.imageSize.width) :
+                            textFieldValue.isEmpty ? 0.0 : 0.0,
+                        y:
+                            textFieldValue.isEmpty ? 0.0 : -(notifier.szselectedLineHeight - notifier.sztextFontSize - 2))
                 if notifier.isSecureTextEntry {
                     SecureField("", text: $textFieldValue.animation()) {
                     }
